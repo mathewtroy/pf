@@ -1,0 +1,27 @@
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-inner {
+    flex-wrap: wrap;
+    gap: 12px;
+    height: auto;
+    padding: 12px 0;
+  }
+  .profile {
+    padding: 48px 0;
+  }
+  .profile-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .btn {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+  .profile-sub { font-size: 15px; }
+  .nav-right { flex-wrap: wrap; gap: 8px; }
+}

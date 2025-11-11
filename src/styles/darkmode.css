@@ -1,0 +1,15 @@
+html.dark {
+  --bg: #0b0d11;
+  --bg-soft: #12161d;
+  --text: #eef2f7;
+  --muted: #9aa4b2;
+  --border: #202632;
+
+  --accent: #a78bfa;
+  --accent-700: #7c3aed;
+  --accent-300: #c7b7ff;
+
+  --btn-fg: #0b0d11;
+  --btn-bg: #eef2f7;
+  --btn-outline: #2b3446;
+}
