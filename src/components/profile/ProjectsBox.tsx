@@ -24,7 +24,12 @@ export default function ProjectsBox() {
             <div className="project-tech">
               {proj.icons.map((icon: string, i: number) => (
                 <div key={i} className="tech-item">
-                  <Image src={icon} alt={proj.techLabels?.[i]} width={30} height={30} />
+                  <Image
+                    src={icon}
+                    alt={proj.techLabels?.[i] ?? "tech-icon"} // 👈 если undefined — подставит fallback
+                    width={30}
+                    height={30}
+                  />
                   <span className="tech-label">{proj.techLabels?.[i]}</span>
                 </div>
               ))}
