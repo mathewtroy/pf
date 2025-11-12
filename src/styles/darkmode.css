@@ -1,15 +1,98 @@
+/* DARK / LIGHT THEMES — pure black vs white contrast */
+
+/* Smooth color transition for theme switch */
+html, body {
+  transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease;
+}
+
+/* ===== DARK THEME ===== */
+/* Default theme (black base) */
 html.dark {
-  --bg: #0b0d11;
-  --bg-soft: #12161d;
-  --text: #eef2f7;
-  --muted: #9aa4b2;
-  --border: #202632;
+  --bg: #0a0a0a;             /* deep black */
+  --bg-soft: #141414;         /* soft dark gray */
+  --text: #f5f5f5;            /* almost white */
+  --muted: #a3a3a3;           /* dim gray */
+  --border: #222;             /* light gray border */
+  --shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
 
-  --accent: #a78bfa;
-  --accent-700: #7c3aed;
-  --accent-300: #c7b7ff;
+  /* Strong purple accent */
+  --accent: #9b6bff;
+  --accent-700: #7b4ff2;
+  --accent-500: #b794ff;
+  --accent-300: #d5c8ff;
+  --accent-hover: #c6b3ff;
 
-  --btn-fg: #0b0d11;
-  --btn-bg: #eef2f7;
-  --btn-outline: #2b3446;
+  /* Button styling */
+  --btn-fg: #0a0a0a;
+  --btn-bg: #fafafa;
+  --btn-outline: #2d2d2d;
+  --btn-hover-bg: #e2e2e2;
+
+  /* Brand glow color */
+  --brand: #c63384;
+}
+
+/* ===== LIGHT THEME ===== */
+/* Opposite: pure white base */
+html.light {
+  --bg: #ffffff;              /* pure white */
+  --bg-soft: #f2f2f2;         /* soft gray background */
+  --text: #0a0a0a;            /* deep black text */
+  --muted: #5a5a5a;           /* medium gray */
+  --border: #d3d3d3;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  /* Cool blue accent for contrast */
+  --accent: #3f5efb;
+  --accent-700: #2a3aff;
+  --accent-500: #5c77ff;
+  --accent-300: #9db4ff;
+  --accent-hover: #2e52ff;
+
+  /* Buttons reversed */
+  --btn-fg: #ffffff;
+  --btn-bg: #2a3aff;
+  --btn-outline: #c9cbe1;
+  --btn-hover-bg: #3f5efb;
+
+  --brand: #0047ab;
+}
+
+/* ===== GRADIENT BACKGROUNDS ===== */
+html.dark body {
+  background: linear-gradient(180deg, #050505 0%, #0f0f0f 100%);
+}
+
+html.light body {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f6f9 100%);
+}
+
+/* ===== CARD & BOX ADAPTATION ===== */
+html.dark .info-box,
+html.dark .project-card,
+html.dark .skills-card {
+  background: var(--bg-soft);
+  border-color: var(--border);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+}
+
+html.light .info-box,
+html.light .project-card,
+html.light .skills-card {
+  background: var(--bg-soft);
+  border-color: var(--border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== ACCENT EFFECTS ===== */
+.with-accent:hover::after {
+  filter: drop-shadow(0 0 8px var(--accent));
+  opacity: 0.9;
+}
+
+/* Theme toggle glow effect */
+.theme-toggle-btn:hover img {
+  filter: drop-shadow(0 0 10px var(--accent));
+  transform: scale(1.1);
+  transition: transform 0.25s ease, filter 0.25s ease;
 }

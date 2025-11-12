@@ -1,8 +1,10 @@
-@import "./base.css";
-@import "./profile.css";
+/* GLOBAL IMPORTS */
+@import "./variables.css";
+@import "./main.css";
 @import "./darkmode.css";
 @import "./media.css";
 
+/* Global helpers */
 .link { color: var(--accent); text-decoration: underline; }
 .section-title { font-size: 28px; font-weight: 700; margin: 48px 0 8px; }
 .muted { color: var(--muted); }

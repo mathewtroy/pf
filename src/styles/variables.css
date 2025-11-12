@@ -1,0 +1,29 @@
+:root {
+  /* Backgrounds & text */
+  --bg: #0f1216;
+  --bg-soft: #171b22;
+  --text: #e6eaf1;
+  --muted: #98a2b3;
+  --border: #242b36;
+  --shadow: 0 10px 40px rgba(0,0,0,.35);
+
+  /* Accent palette */
+  --accent: #8b5cf6;
+  --accent-700: #6d28d9;
+  --accent-500: #7c3aed;
+  --accent-300: #bda9ff;
+  --accent-hover: #a78bfa;
+
+  /* Brand & general UI */
+  --brand: #83164c;
+
+  /* Buttons */
+  --btn-fg: #0b0b0f;
+  --btn-bg: #e6eaf1;
+  --btn-outline: #2b3240;
+  --btn-hover-bg: #dce1eb;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-slow: 0.4s ease;
+}

@@ -1,27 +1,153 @@
-@media (max-width: 900px) {
-  .profile-grid {
-    grid-template-columns: 1fr;
+/* ---------- Desktop to Tablet (≤1200px) ---------- */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
   }
+
+  .main-box {
+    gap: 48px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  }
+}
+
+/* ---------- Tablet (≤900px) ---------- */
+@media (max-width: 900px) {
+  /* general layout */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* main section (photo + info) */
+  .main-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 60px 0;
+  }
+
+  .main-left {
+    order: 1;
+  }
+
+  .main-photo-wrapper {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .main-right {
+    order: 2;
+    align-items: center;
+  }
+
+  .info-box,
+  .skills-card {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  /* profile titles */
+  .profile-title {
+    font-size: 32px;
+  }
+  .profile-role {
+    font-size: 20px;
+  }
+
+  /* navbar */
   .nav-inner {
     flex-wrap: wrap;
     gap: 12px;
     height: auto;
     padding: 12px 0;
   }
-  .profile {
-    padding: 48px 0;
+
+  /* projects */
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
-  .profile-title {
-    font-size: 36px;
-    line-height: 1.2;
+
+  /* skills */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 20px;
+    justify-items: center;
   }
+  .skill-label {
+    font-size: 13px;
+  }
+
+  /* contacts */
+  .contact-list.big {
+    font-size: 20px;
+  }
+
+  /* buttons */
   .btn {
     padding: 10px 14px;
   }
 }
 
+/* ---------- Mobile (≤600px) ---------- */
 @media (max-width: 600px) {
-  .container { padding: 0 16px; }
-  .profile-sub { font-size: 15px; }
-  .nav-right { flex-wrap: wrap; gap: 8px; }
+  .container {
+    padding: 0 16px;
+  }
+
+  /* text size */
+  .profile-title {
+    font-size: 26px;
+  }
+
+  .profile-about {
+    font-size: 15px;
+  }
+
+  /* main section */
+  .main-photo-wrapper {
+    max-width: 300px;
+  }
+
+  /* projects layout */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* nav */
+  .nav-right {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  /* contacts */
+  .contact-list.big {
+    font-size: 18px;
+  }
+
+  /* skills icons + labels */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .skills-grid img {
+    width: 32px;
+    height: 32px;
+  }
+  .skill-label {
+    font-size: 12px;
+  }
+
+  /* buttons smaller */
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
