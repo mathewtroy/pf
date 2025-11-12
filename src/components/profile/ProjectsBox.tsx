@@ -17,7 +17,9 @@ export default function ProjectsBox() {
         {PROJECTS.map((proj: ProjectItem) => (
           <div key={proj.title} className="project-card">
             <h3>{proj.title}</h3>
-            <p className="muted">{t.projects[proj.key] || proj.desc}</p>
+            <p className="muted">
+              {(t.projects as Record<string, string>)[proj.key] ?? proj.desc}
+            </p>
 
             <div className="project-tech">
               {proj.icons.map((icon: string, i: number) => (
