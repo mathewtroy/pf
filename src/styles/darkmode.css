@@ -2,17 +2,19 @@
 
 /* Smooth color transition for theme switch */
 html, body {
+  -webkit-transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease;
+  -o-transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease;
   transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease;
 }
 
-/* ===== DARK THEME ===== */
+/* DARK THEME */
 /* Default theme (black base) */
 html.dark {
-  --bg: #0a0a0a;             /* deep black */
-  --bg-soft: #141414;         /* soft dark gray */
-  --text: #f5f5f5;            /* almost white */
-  --muted: #a3a3a3;           /* dim gray */
-  --border: #222;             /* light gray border */
+  --bg: #0a0a0a;            
+  --bg-soft: #141414;        
+  --text: #f5f5f5;           
+  --muted: #a3a3a3;           
+  --border: #222;             
   --shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
 
   /* Strong purple accent */
@@ -32,13 +34,13 @@ html.dark {
   --brand: #c63384;
 }
 
-/* ===== LIGHT THEME ===== */
+/* LIGHT THEME */
 /* Opposite: pure white base */
 html.light {
-  --bg: #ffffff;              /* pure white */
-  --bg-soft: #f2f2f2;         /* soft gray background */
-  --text: #0a0a0a;            /* deep black text */
-  --muted: #5a5a5a;           /* medium gray */
+  --bg: #ffffff;              
+  --bg-soft: #f2f2f2;         
+  --text: #0a0a0a;           
+  --muted: #5a5a5a;           
   --border: #d3d3d3;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
@@ -58,22 +60,27 @@ html.light {
   --brand: #0047ab;
 }
 
-/* ===== GRADIENT BACKGROUNDS ===== */
+/* GRADIENT BACKGROUNDS */
 html.dark body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#050505), to(#0f0f0f));
+  background: -o-linear-gradient(top, #050505 0%, #0f0f0f 100%);
   background: linear-gradient(180deg, #050505 0%, #0f0f0f 100%);
 }
 
 html.light body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f9));
+  background: -o-linear-gradient(top, #ffffff 0%, #f6f6f9 100%);
   background: linear-gradient(180deg, #ffffff 0%, #f6f6f9 100%);
 }
 
-/* ===== CARD & BOX ADAPTATION ===== */
+/* CARD & BOX ADAPTATION */
 html.dark .info-box,
 html.dark .project-card,
 html.dark .skills-card {
   background: var(--bg-soft);
   border-color: var(--border);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
 }
 
 html.light .info-box,
@@ -81,18 +88,27 @@ html.light .project-card,
 html.light .skills-card {
   background: var(--bg-soft);
   border-color: var(--border);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== ACCENT EFFECTS ===== */
+/* ACCENT EFFECTS */
 .with-accent:hover::after {
-  filter: drop-shadow(0 0 8px var(--accent));
+  -webkit-filter: drop-shadow(0 0 8px var(--accent));
+          filter: drop-shadow(0 0 8px var(--accent));
   opacity: 0.9;
 }
 
 /* Theme toggle glow effect */
 .theme-toggle-btn:hover img {
-  filter: drop-shadow(0 0 10px var(--accent));
-  transform: scale(1.1);
+  -webkit-filter: drop-shadow(0 0 10px var(--accent));
+          filter: drop-shadow(0 0 10px var(--accent));
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.25s ease, -webkit-filter 0.25s ease;
+  transition: -webkit-transform 0.25s ease, -webkit-filter 0.25s ease;
+  -o-transition: transform 0.25s ease, filter 0.25s ease;
   transition: transform 0.25s ease, filter 0.25s ease;
+  transition: transform 0.25s ease, filter 0.25s ease, -webkit-transform 0.25s ease, -webkit-filter 0.25s ease;
 }
