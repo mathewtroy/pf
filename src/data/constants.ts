@@ -1,6 +1,6 @@
 import { ICONS } from "./icons";
 
-export const CV_FILE = "/cv_kross_aleksandr_2025.pdf";
+export const CV_FILE = "/cv_kross_aleksandr.pdf";
 
 export const CONTACTS = {
   email: "alexkross@seznam.cz",
