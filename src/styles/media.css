@@ -19,14 +19,16 @@
 
 /* ---------- Tablet (≤900px) ---------- */
 @media (max-width: 900px) {
-  /* general layout */
   .container {
     padding: 0 20px;
   }
 
   /* main section (photo + info) */
   .main-box {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     gap: 40px;
     padding: 60px 0;
@@ -34,16 +36,26 @@
 
   .main-left {
     order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .main-photo-wrapper {
     max-width: 340px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .main-right {
     order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .info-box,
@@ -51,12 +63,14 @@
     width: 100%;
     max-width: 600px;
     text-align: center;
+    margin: 0 auto;
   }
 
   /* profile titles */
   .profile-title {
     font-size: 32px;
   }
+
   .profile-role {
     font-size: 20px;
   }
@@ -80,6 +94,7 @@
     gap: 20px;
     justify-items: center;
   }
+
   .skill-label {
     font-size: 13px;
   }
@@ -101,18 +116,45 @@
     padding: 0 16px;
   }
 
-  /* text size */
+  .main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .main-photo-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box,
+  .skills-card {
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   .profile-title {
     font-size: 26px;
   }
 
   .profile-about {
     font-size: 15px;
-  }
-
-  /* main section */
-  .main-photo-wrapper {
-    max-width: 300px;
   }
 
   /* projects layout */
@@ -132,20 +174,21 @@
     font-size: 18px;
   }
 
-  /* skills icons + labels */
+  /* skills */
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
+
   .skills-grid img {
     width: 32px;
     height: 32px;
   }
+
   .skill-label {
     font-size: 12px;
   }
 
-  /* buttons smaller */
   .btn {
     font-size: 14px;
     padding: 8px 12px;
