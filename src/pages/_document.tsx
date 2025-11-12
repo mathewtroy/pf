@@ -15,9 +15,9 @@ export default function Document() {
   return (
     <Html lang="en" className="scroll-smooth">
       <Head>
-        <meta name="description" content="Aleksandr Kross — Web Developer Portfolio" />
+        <meta name="description" content="Aleksandr Kross — Sofware Developer Portfolio" />
         <meta property="og:title" content="Aleksandr Kross — Portfolio" />
-        <meta property="og:description" content="React • TypeScript • Firebase" />
+        <meta property="og:description" content="JavaScript, React, TypeScript" />
         <meta property="og:image" content="/pf-profile.svg" />
         <link rel="icon" href="/pf-icon.svg" type="image/svg+xml" />
       </Head>
