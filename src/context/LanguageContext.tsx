@@ -1,33 +1,50 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 type Lang = "en" | "ru";
 
-interface LangContextProps {
+interface LanguageContextProps {
   lang: Lang;
-  toggleLang: () => void;
+  setLang: (lang: Lang) => void;
+  toggleLang: () => void; 
 }
 
-const LanguageContext = createContext<LangContextProps>({
+const LanguageContext = createContext<LanguageContextProps>({
   lang: "en",
-  toggleLang: () => {},
+  setLang: () => {},
+  toggleLang: () => {}, 
 });
 
-export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<Lang>("en");
+export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [lang, setLangState] = useState<Lang>("en");
 
   useEffect(() => {
-    const stored = localStorage.getItem("lang") as Lang | null;
-    if (stored) setLang(stored);
+    const timer = setTimeout(() => {
+      const savedLang = localStorage.getItem("lang") as Lang | null;
+      if (savedLang) {
+        setLangState(savedLang);
+      } else {
+        const browserLang = navigator.language.startsWith("ru") ? "ru" : "en";
+        setLangState(browserLang);
+        localStorage.setItem("lang", browserLang);
+      }
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, []);
 
+  const setLang = (newLang: Lang) => {
+    setLangState(newLang);
+    localStorage.setItem("lang", newLang);
+  };
+
   const toggleLang = () => {
-    const next = lang === "en" ? "ru" : "en";
-    setLang(next);
-    localStorage.setItem("lang", next);
+    const newLang = lang === "en" ? "ru" : "en";
+    setLangState(newLang);
+    localStorage.setItem("lang", newLang);
   };
 
   return (
-    <LanguageContext.Provider value={{ lang, toggleLang }}>
+    <LanguageContext.Provider value={{ lang, setLang, toggleLang }}>
       {children}
     </LanguageContext.Provider>
   );

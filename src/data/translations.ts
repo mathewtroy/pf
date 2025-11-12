@@ -22,6 +22,15 @@ export const TRANSLATIONS = {
       travel: "Full-stack travel booking app with secure authentication and booking requests.",
       eshop: "Automated Selenium tests for e-commerce workflows.",
     },
+    seo: {
+      title: "Aleksandr Kross — Software Developer Portfolio",
+      description:
+        "Portfolio of Aleksandr Kross — Software Developer skilled in React, TypeScript, JavaScript, and Firebase. Explore my projects, skills, and experience.",
+      keywords:
+        "Aleksandr Kross, Software Developer, React, TypeScript, Firebase, Portfolio, JavaScript, Web Developer",
+      ogDescription:
+        "Full-stack developer specializing in React, TypeScript, Firebase, and modern web technologies.",
+    },
   },
 
   ru: {
@@ -46,6 +55,15 @@ export const TRANSLATIONS = {
       finance: "Мобильное приложение для управления личными финансами на Kotlin с использованием Jetpack Compose.",
       travel: "Полнофункциональный сайт для бронирования туров с безопасной авторизацией и системой бронирования.",
       eshop: "Автоматизированные тесты Selenium для проверки процессов интернет-магазина.",
+    },
+    seo: {
+      title: "Александр Кросс — Портфолио разработчика ПО",
+      description:
+        "Портфолио Александра Кросса — разработчика программного обеспечения с опытом в React, TypeScript и Firebase. Ознакомьтесь с проектами и навыками.",
+      keywords:
+        "Александр Кросс, разработчик ПО, React, TypeScript, Firebase, JavaScript, портфолио, веб-разработчик",
+      ogDescription:
+        "Фулстек-разработчик, специализирующийся на React, TypeScript, Firebase и современных веб-технологиях.",
     },
   },
 } as const;

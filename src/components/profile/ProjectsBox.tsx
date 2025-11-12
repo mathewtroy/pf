@@ -26,7 +26,7 @@ export default function ProjectsBox() {
                 <div key={i} className="tech-item">
                   <Image
                     src={icon}
-                    alt={proj.techLabels?.[i] ?? "tech-icon"} // 👈 если undefined — подставит fallback
+                    alt={proj.techLabels?.[i] ?? "tech-icon"} 
                     width={30}
                     height={30}
                   />
