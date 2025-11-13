@@ -21,6 +21,9 @@ export const TRANSLATIONS = {
       finance: "Personal finance manager built in Kotlin using Jetpack Compose.",
       travel: "Full-stack travel booking app with secure authentication and booking requests.",
       eshop: "Automated Selenium tests for e-commerce workflows.",
+      dsva: "Distributed system with Bully Algorithm leader election, Java RMI communication, REST API, and automated Bash scripts.",
+      visa: "Single-page website explaining the student visa / residence permit extension process with responsive timeline.",
+
     },
     seo: {
       title: "Aleksandr Kross — Software Developer Portfolio",
@@ -55,6 +58,9 @@ export const TRANSLATIONS = {
       finance: "Мобильное приложение для управления личными финансами на Kotlin с использованием Jetpack Compose.",
       travel: "Полнофункциональный сайт для бронирования туров с безопасной авторизацией и системой бронирования.",
       eshop: "Автоматизированные тесты Selenium для проверки процессов интернет-магазина.",
+      dsva: "Распределённая система c алгоритмом Bully для выборов лидера, использованием Java RMI, REST API и автоматизирующими Bash-скриптами.",
+      visa: "Одностраничный сайт с инструкцией по продлению студенческой визы / ВНЖ, с таймлайном и SVG-иконками.",
+
     },
     seo: {
       title: "Александр Кросс — Портфолио разработчика ПО",

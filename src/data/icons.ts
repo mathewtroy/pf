@@ -21,4 +21,5 @@ export const ICONS = {
   postgresql: "/postgresql-icon.svg",
   figma: "/figma-icon.svg",
   docker: "/docker-icon.svg",
+  bash: "/bash-icon.svg",
 };

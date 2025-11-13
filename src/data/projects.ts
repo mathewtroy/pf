@@ -70,4 +70,22 @@ export const PROJECTS: ProjectItem[] = [
     techLabels: ["Java", "Selenium"],
     github: "https://github.com/mathewtroy/ts1-pro",
   },
+  {
+  key: "dsva",
+  title: "DISTRIBUTED SYSTEM — BULLY ALGORITHM",
+  desc: "Distributed system implementing leader election using Bully Algorithm with Java RMI, REST API, and automated Bash scripts.",
+  icons: [ICONS.java, ICONS.linux, ICONS.bash],
+  techLabels: ["Java", "Linux", "Bash"],
+  github: "https://github.com/mathewtroy/dsva",
+},
+{
+  key: "visa",
+  title: "VISA / RESIDENCE PERMIT GUIDE",
+  desc: "Single-page website explaining the student visa extension process with responsive timeline and SVG icons.",
+  icons: [ICONS.html, ICONS.css],
+  techLabels: ["HTML", "CSS"],
+  github: "https://github.com/mathewtroy/visa",
+  website: "https://mathewtroy.github.io/visa/",
+},
+
 ];
