@@ -1,40 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# 🌐 Personal Portfolio Website — Aleksandr Kross  
 
-First, run the development server:
+**Author:** Aleksandr Kross  
+📧 [krossale@fel.cvut.cz](mailto:krossale@fel.cvut.cz)  
+**GitHub:** [https://github.com/mathewtroy/pf](https://github.com/mathewtroy/pf)  
+**Live Website:** [https://krossale.vercel.app](https://krossale.vercel.app)  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Overview  
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+This **portfolio website** showcases my projects, technical skills, and professional experience.  
+Built with **Next.js (React 19)** and **TypeScript**, it supports **Dark / Light themes**, and **multi-language (EN / RU)** mode — dynamically switching content and SEO meta tags.  
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🎯 Key Features  
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🌓 **Dark / Light mode** with smooth transitions  
+- 🌍 **Multi-language (EN / RU)** support via React Context  
+- ⚙️ **Dynamic SEO meta tags** that update based on selected language  
+- 💼 **Responsive portfolio sections** (Main, Projects, Contacts)  
+- 🔗 Project cards with GitHub and live links  
+- 📱 Optimized for mobile, tablet, and desktop  
+- 🚀 **Deployed on Vercel**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Technologies  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+| **Category** | **Stack / Tools** |
+|---------------|-------------------|
+| **Framework** | Next.js 16 (React 19) |
+| **Language** | TypeScript |
+| **Styling** | Custom CSS, variables.css, responsive media queries |
+| **Icons** | Font Awesome |
+| **Deployment** | Vercel |
+| **Version Control** | Git, GitHub |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧩 Project Structure  
+**public/** — static assets (icons, images) <br>
+**src/components/** — reusable UI components <br>
+**src/components/profile/** — MainBox, ProjectsBox, ContactsBox <br>
+**src/context/** — LanguageContext (EN/RU) <br>
+**src/data/** — translations, projects, constants <br>
+**src/pages/** — Next.js pages (_app, _document, index) <br>
+**src/styles/** — main.css, media.css, variables.css, darkmode.css <br>
+**package.json** — project dependencies <br>
+**tsconfig.json** — TypeScript config <br>
+**next.config.ts** — Next.js settings <br>
+**eslint.config.mjs** — ESLint rules <br>
+**README.md** — project documentation <br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 🚀 How to Run the Project
+**Clone the repository:** <br>
+`git clone https://github.com/mathewtroy/pf.git` <br>
+`cd pf`
+
+**Install dependencies:** <br>
+`npm install`
+
+
+**Run the development server:** <br>
+`npm run dev`
+
+Then open: http://localhost:3000
+
+
+## ☁️ Deployment (Vercel)
+**App will be available at** https://krossale.vercel.app
+
+
+## 🌍 SEO Configuration
+Dynamic <Head> tags in pages/index.tsx include:
+- title and meta description for both languages
+- OpenGraph (og:) and Twitter card support
+- Dynamic favicon (/pf-icon.svg)
+- pf-preview.png (1183×776) used as preview image for Telegram, LinkedIn.
+
+  
+## 🧠 Project Purpose
+This project demonstrates modern Next.js + TypeScript development,
+with focus on clean architecture, responsive design, and SEO-friendly multilingual support.
+
+
+© 2025 Aleksandr Kross
