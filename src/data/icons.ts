@@ -22,4 +22,9 @@ export const ICONS = {
   figma: "/figma-icon.svg",
   docker: "/docker-icon.svg",
   bash: "/bash-icon.svg",
+  ai: "/ai-icon.svg",
+  fastapi: "/fastapi-icon.svg",
+  nextjs: "/nextjs-icon.svg",
+  vite: "/vite-icon.svg",
+
 };

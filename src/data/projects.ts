@@ -11,6 +11,16 @@ export interface ProjectItem {
 }
 
 export const PROJECTS: ProjectItem[] = [
+  
+  {
+    key: "voicer",
+    title: "VOICER AI ASSISTANT",
+    desc: "Real-time AI voice assistant using TypeScript, FastAPI, Deepgram STT, Groq LLM, and gTTS.",
+    icons: [ICONS.ts, ICONS.vite, ICONS.fastapi, ICONS.python],
+    techLabels: ["TypeScript","Vite" ,"FastAPI","Python"],
+    github: "https://github.com/mathewtroy/voicer",
+    website: "https://voicer-ai.vercel.app/",
+  },
   {
     key: "candly",
     title: "CANDLY SOCIAL APP",

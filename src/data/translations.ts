@@ -14,6 +14,7 @@ export const TRANSLATIONS = {
       linkLive: "Open Web App",
     },
     projects: {
+      voicer: "AI voice assistant with real-time speech-to-text, LLM response generation, and text-to-speech. Uses Deepgram STT, Groq LLaMA 3.1, FastAPI backend, and gTTS.",
       candly: "Social app with posts, likes, search and admin tools.",
       todo: "Task manager with real-time Firestore sync and user authentication.",
       whiteboard: "Interactive drawing app with undo/redo, color selection, and brush size control.",
@@ -51,7 +52,8 @@ export const TRANSLATIONS = {
       linkLive: "Открыть веб-приложение",
     },
     projects: {
-      candly: "Социальное приложение с постами, лайками, поиском и панелью администратора.",
+      voicer: "AI-голосовой ассистент с распознаванием речи, генерацией ответов LLM и голосовой озвучкой. Использует Deepgram STT, Groq LLaMA 3.1, FastAPI backend и gTTS.",
+      candly: "Социальное сеть с постами, лайками, поиском и панелью администратора.",
       todo: "Менеджер задач с синхронизацией Firestore в реальном времени и авторизацией пользователей.",
       whiteboard: "Интерактивное приложение для рисования с функциями отмены, выбора цвета и толщины кисти.",
       vuln: "Приложение сканер уязвимостей PHP с демонстрационным уязвимым веб-приложением.",
